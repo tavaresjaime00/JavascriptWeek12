@@ -27,16 +27,17 @@ request.onload = function() {
   topFlavours(iScreamInc);  
 }
 
-// set up populateHeader function
+// Step Eight - set up populateHeader function to fill in the header function 
 function populateHeader(jsonObj) {
-  // grab the company name from the JSON Object and create new element, adding text
-  // and appending to the header
-  let headerH1 = document.createElement('h1');
+  
+  // grab the company name from JSON object and then create a new element, adding text and appending to the header
+  
+  let headerH1 = document.createElement('h1'); 
   headerH1.textContent = jsonObj['companyName'];
   header.appendChild(headerH1);
-
-  // grab the company head office form the json obj and create a new p element,
-  // adding the JSON text and appending to the companyName h1 element.
+  
+  //grab the company info and established date and add a new paragraph to your HTML that displays this info 
+  
   let headerPara = document.createElement('p');
   headerPara.textContent = 'Head Office: ' + jsonObj['headOffice'] + ' , Established:  ' + jsonObj['established'];
   header.appendChild(headerPara);
