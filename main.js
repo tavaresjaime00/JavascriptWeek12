@@ -60,7 +60,7 @@ function topFlavours(jsonObj) {
     let list = document.createElement('ul');
     
     //grab the data associated with image to set the src and alt attribute
-    img.setAttribute('src', 'https://tavaresjaime00.github.io/JavascriptWeek12/images/' + topFlavours[i].image);
+    img.setAttribute('src', 'images/' + topFlavours[i].image);
     img.setAttribute('alt', topFlavours[i].image );
     
     h2.textContent = topFlavours[i].name; 
